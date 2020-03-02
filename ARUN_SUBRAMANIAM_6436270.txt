@@ -1,0 +1,59 @@
+COM1032 Mobile Computing
+Assignment 1
+Feedback
+SUBRAMANIAM ARUN 6436270
+
+Below is detailed feedback for each question that you have submitted, plus comments on how you can improve your work.  Remember to read and act on the feedback - don't just focus on the mark.
+
+Section 1: what has been done well (in relation to the marking criteria)
+
+Question A
+
+portrait: app displays clearly in portrait
+landscape: app displays clearly in landscape
+simple list: ListView used correctly and neatly
+array adapter: Use of Array Adapter but may have been some weaknesses in style and may not have used a custom adapter but may have had a separate xml file
+multiple activity: some attempt at multiple activity through an intent but some weaknesses in style, e.g. not passing data when it could have been helpful to do so.
+displaying more detailed information: attempt made did not meet trying to present more information about an item
+
+Question B
+
+simple addition: Intuitive addition of information from a button click, appropriately implemented via a listener or button click method. Correct implementation
+complex addition of title and description: Reasonable attempt at the addition of detailed information from a button click, appropriately implemented via a listener or button click method. 
+
+Question C
+
+deleting item: Intuitive removal of information from list item click or otherwise, appropriately implemented via a listener. Correct implementation and cleanly presented
+updating list properly: Underlying data structures updated properly and neatly
+
+Question D
+
+correct initial reading of info: Clear initialization of list from either a file or a database
+correct storing of info on pausing ap: Reasonable attempt at storing of persistent state when app is paused but there may be weaknesses because not really using the data model if reading from a file, always using the file.
+
+Question E
+
+commented: Very nicely commented
+readable: Excellent, clearly readable code
+good resource use: Excellent use of resource names
+separate methods and classes: Good attempt at structuring the code
+robust: Excellent validation checking
+
+Additional Questions
+
+additional feature 1: Excellent implementation of additional feature and typically this was an icon
+additional feature 2: Excellent implementation of additional feature
+additional feature 3: Excellent implementation of additional feature
+
+Section 2: how you may strengthen your work
+
+A very good application overall, with a nice layout, although you could have used a couple more things to make it even better. It is good to see that you took advantage of the action bar to add more tasks, and the fact that you utilized short and long clicks to display more information about a task or delete them. You could have also implemented a custom adapter in a different class and an xml layout file rather than including it in your MainActivity, which would make your list much better in terms of presentation. Another thing that you did not take into consideration was the use of multiple activities. While you do have another activity for displaying the information about a task it is a rather simple one. What you could have done is have the add button prompt you into a different activity rather than the popping up a dialog in your MainActivity, where you could also implement the feature of adding more information about a task such as due date. Regarding the persistent state, while you did achieve it by overriding the onStart() and onDestroy() methods and closing the database and re-opening during launch it would have been better to make use of the onSaveInstanceState() and onRestoreState() methods for keeping the state of an activity when it is paused. This is more efficient and saves resources as you don't have to read your entire text file back to the app every time (think of what will be the case if you have 1 million tasks to load every time). Your code was nicely commented, robust and easy to read, and your optional tasks were correctly implemented and contributed to the overall presentation of the application. 
+
+Grade
+
+97%
+
+Section 3: General Comments
+
+Please refer to the general comment sheet which collates comments made across all submissions for points of improvement that are more widely applicable.
+
